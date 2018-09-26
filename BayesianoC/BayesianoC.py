@@ -67,9 +67,9 @@ class BayesianoC:
 	def imprimirDatos(self):
 		print "----------------Datos del Archivo----------------"
 		print "|Rasg/Clases\t|",
-		for x in range(len(self.rasgos)-1):
+		for x in range(len(self.rasgos)):
 			print self.rasgos[x]+"\t|",
-		print ""+self.rasgos[x]+"\t|"
+		print ""
 
 		for y in range(len(self.clases)):
 			print "|"+self.clases[y]+"\t|",
@@ -80,9 +80,9 @@ class BayesianoC:
 	def imprimirProba(self):
 		print "------------------Probabilidades-----------------"
 		print "|Rasg/Clases\t|",
-		for x in range(len(self.rasgos)-1):
+		for x in range(len(self.rasgos)):
 			print self.rasgos[x]+"\t|",
-		print ""+self.rasgos[x]+"\t|"
+		print ""
 
 		for y in range(len(self.clases)):
 			print "|"+self.clases[y]+"\t|",
