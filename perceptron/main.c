@@ -16,8 +16,8 @@ int main(int argc, char* argv[])
 					  {1,1}};	//vector de entradas
 
 	int target[] = {1,1,1,0};	//targets de la compuerta NAND
-	double bias = 0.5;			// bias inicial
-	double weights[] = {2.0,2.0};	//vector de pesos iniciales
+	double bias = 0.7;			// bias inicial
+	double weights[] = {-1.0,0.3};	//vector de pesos iniciales
 	register int i;
 	char c[3];
 	int p[2], flag = 1;

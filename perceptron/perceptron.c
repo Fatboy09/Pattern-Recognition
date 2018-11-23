@@ -53,6 +53,7 @@ void aprender(int inputs[][2], int target[], double* bias, double weights[])
         if(cont >= 4)
             flag = 1;
     }
+    printf("\nNum de iteraciones para el aprendizaje: %d\n",  cont);
 }
 
 void output_NAND(double w[], double b, int p[])
