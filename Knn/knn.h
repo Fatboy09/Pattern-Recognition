@@ -1,5 +1,5 @@
-#ifndef PERCEPTRON_H
-#define PERCEPTRON_H
+#ifndef KNN_H
+#define KNN_H
 
 struct knn
 {
