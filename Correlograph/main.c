@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <ctype.h>
-#include "lernmatrix.h"
+#include "correlograph.h"
 
 void vaciar_buffer();
 
@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 	char c[3];
 
 	printf("\t-------------------------\n");
-	printf("\t|\tLernmatrix\t|\t\n");
+	printf("\t|\tCorrelograph\t|\t\n");
 	printf("\t-------------------------\n");
 
 	if(argc < 2){
@@ -27,11 +27,12 @@ int main(int argc, char* argv[])
 
 	lineas = linesFile(argv[1]);
 	tam = lineas - 1;
+	printf("tam = %d\n",tam);
 
 	datos = (struct patron *) malloc(sizeof(struct patron) * tam);
 	readFile(argv[1],datos,tam,lineas,&m,&n);
-	int matriz[n][m];
 	int inputs[m];
+	int matriz[n][m];
 	iniMatrix(matriz);
 	printf("\nDatos leidos del archivo:\n");
     printArray(datos,tam,m,n);
